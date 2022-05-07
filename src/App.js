@@ -1,5 +1,6 @@
-import {ChatEngine} from 'rect--vhat engine';
+import {ChatEngine} from 'react-chat-engine';
 import './App.css';
+import ChatFeed from './components/ChatFeed'
 const App=()=>{
     return(
     <ChatEngine
@@ -7,7 +8,8 @@ const App=()=>{
     projectID=""
     userNam=""
     userSecret=""
+    renderChatFeed={(chatAppProps)  => <ChatFeed {...chatAppProps}/>}
     />
-    );
+    );   
 }
-export default App;
+export default App; 
